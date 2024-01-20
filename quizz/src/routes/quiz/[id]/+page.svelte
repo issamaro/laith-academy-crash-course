@@ -14,7 +14,7 @@
     <button on:click={() => currentQuestionIndex += 1}>Click me</button>
     <QuestionText text={question.question}/>
     <div class="flex justify-between flex-wrap cursor-pointer">
-        {#each question.options as option (question.options.id)}
+        {#each question.options as option (option.id)}
         <QuestionOption option={option} answer={question.answer}/>
         {/each}
     </div>
